@@ -1,0 +1,267 @@
+$color-primary : #d1d4db;
+$section-header-color: #127ba7;
+$color-white: rgba(255, 255, 255);
+$section-header-font-size: 1.3rem;
+
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main{
+  h1, h2{
+    color: $section-header-color;
+  }
+}
+.navbar{
+  width: 100vw;
+  padding-left: 2rem;
+  background-color: darken($color-primary, 10%);
+
+
+  h1{
+    color: $section-header-color !important;
+    font-size: 1.5rem;
+  }
+
+  a{
+    font-size: 1.1rem;
+    color: white;
+  }
+  a:hover{
+    color: $section-header-color;
+  }
+  
+
+}
+.header{
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+
+  &-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .man-holding-laptop{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    left: 5%;
+    top: 10%;
+  }
+  .white-bg{
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+    width: 40%;
+    height: 50%;
+
+    .bigger-white-bg{
+      height: 30vh;
+      width: 30vh;
+      border-radius: 50%;
+      background-color: white;
+      
+    }
+    .smaller-white-bg{
+      height: 15vh;
+      width: 15vh;
+      border-radius: 50%;
+      margin-top: -2.5%;
+      background-color: white;
+      
+    }
+    
+  }
+
+  .web-info{
+    position: absolute;
+    width: 60vh;
+    height: auto;
+    right: 10%;
+    bottom: 10%;
+
+
+    h1{
+      font-size: 2.5rem;
+    }
+    span{
+      display: block;
+    }
+    p{
+      color: $section-header-color;
+    }
+  }
+}
+// about section where we have 4 contents
+#about{
+  height: auto;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+ 
+// content of about-section
+  .about-child{
+    height: 85vh;
+    width: 50%;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ //web3 info section
+  #web3-info{
+    position: relative;
+  
+  
+    .info{
+      position: absolute;
+      width: 70%;
+      height: auto;  
+    }
+
+    span{
+      display: block;
+    }
+  
+  }
+  //section of the man holding pen
+  #man-holding-pen{
+    position: relative;
+
+
+    &-img{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  //section of the img where meeting is holding
+  #meeting-sec{
+    position: relative;
+
+    &-img{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  //leaderboard
+  #leader-board-content{
+    position: relative;
+
+
+    .arrow{
+      position: absolute;
+      right:  5%;
+      transform: rotate(180deg);
+    }
+  }
+
+
+
+
+
+
+//styling for arrow
+  .arrow{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+//sections header style
+  .section-header{
+    font-size: $section-header-font-size;
+  }
+}
+
+// what we achieved
+#achievement{
+  width: 100vw;
+  height: 90vh;
+  background-color: $color-primary;
+  position: relative;
+
+  .achievement-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &-mini{
+      width: 50%;
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      p{
+        position: absolute;
+        width: 60%;
+        right: 0;
+      }
+
+      h1{
+        font-size: 2rem;
+        
+      }
+    }   
+  }
+}
+
+// alumni section
+
+#alumni{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  h2{
+    margin-bottom: 2rem;
+  }
+
+//  alumnus profile
+  .alumnus-profile{
+    height: auto;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;  
+   
+    img{ 
+      border-radius: 50%;
+      height: 150px;
+      width: 150px; 
+    }
+    figcaption{
+      color: $section-header-color;
+      font-size: 1.3rem;
+      font-weight: bold;
+
+    }
+    .alumnus-info{
+      width: 50vh;
+      text-align: center;  
+    }
+  }
+
+}
+
+
