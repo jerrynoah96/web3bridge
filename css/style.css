@@ -6,15 +6,39 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
+main {
+  box-sizing: border-box;
+}
 main h1, main h2 {
   color: #127ba7;
+}
+main p {
+  font-size: 1.1rem;
+  font-family: "Century Gothic" !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #127ba7;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.1rem grey;
+  border-radius: 0.2rem;
+  height: 0.3rem;
 }
 
 .navbar {
   width: 100vw;
   padding-left: 2rem;
+  padding-right: 1.5rem !important;
   background-color: #b4b9c5;
 }
 .navbar h1 {
@@ -23,9 +47,20 @@ main h1, main h2 {
 }
 .navbar a {
   font-size: 1.1rem;
+  font-family: "Century Gothic" !important;
   color: white;
 }
 .navbar a:hover {
+  color: #127ba7 !important;
+}
+.navbar #reg-btn {
+  background-color: #127ba7;
+  border: thin solid #127ba7;
+  border-radius: 1.25rem;
+  color: #d1d4db;
+}
+.navbar #reg-btn:hover {
+  background-color: #d1d4db;
   color: #127ba7;
 }
 
@@ -102,6 +137,9 @@ main h1, main h2 {
   justify-content: center;
   align-items: center;
 }
+#about .about-child h2 {
+  font-size: 1.3rem;
+}
 #about #web3-info {
   position: relative;
 }
@@ -137,6 +175,9 @@ main h1, main h2 {
   right: 5%;
   transform: rotate(180deg);
 }
+#about p {
+  font-size: 1.1rem;
+}
 #about .arrow {
   height: 1.5rem;
   width: 1.5rem;
@@ -158,10 +199,16 @@ main h1, main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
 }
 #achievement .achievement-content-mini {
   width: 50%;
   height: 30%;
+  background-color: #b4b9c5;
+  box-shadow: 0.1rem 0.1rem 0.4rem black;
+  padding: 0 1rem;
+  padding-right: 0.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -171,6 +218,7 @@ main h1, main h2 {
   position: absolute;
   width: 60%;
   right: 0;
+  color: black;
 }
 #achievement .achievement-content-mini h1 {
   font-size: 2rem;
@@ -205,6 +253,77 @@ main h1, main h2 {
 #alumni .alumnus-profile .alumnus-info {
   width: 50vh;
   text-align: center;
+}
+#alumni .alumnus-profile p {
+  font-size: 1rem;
+}
+
+footer {
+  height: 30vh;
+  width: 100vw;
+  background-color: black;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+footer div {
+  width: auto;
+  height: auto;
+  padding-top: 1rem;
+}
+footer div a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  background-color: #127ba7;
+  color: white;
+}
+footer div a:hover {
+  background-color: #d1d4db;
+  color: #127ba7;
+}
+footer p {
+  font-size: 1.1rem;
+  color: #d1d4db;
+  margin-bottom: 0;
+}
+footer hr {
+  width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #about .about-child {
+    width: 100%;
+  }
+
+  .achievement-content-mini {
+    width: 80% !important;
+  }
+
+  .man-holding-laptop {
+    position: absolute;
+    height: 50% !important;
+    width: 35% !important;
+    left: 2% !important;
+    top: 0;
+  }
+
+  .web-info {
+    position: absolute;
+    width: 55vh !important;
+    height: auto;
+    right: 5% !important;
+    bottom: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
