@@ -204,11 +204,10 @@ body::-webkit-scrollbar-track {
 }
 #achievement .achievement-content-mini {
   width: 50%;
-  height: 30%;
+  height: auto;
   background-color: #b4b9c5;
   box-shadow: 0.1rem 0.1rem 0.4rem black;
-  padding: 0 1rem;
-  padding-right: 0.3rem;
+  padding: 2rem 0.3rem 1.5rem 0.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
